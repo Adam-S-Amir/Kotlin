@@ -16,10 +16,11 @@
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="2dp"
         android:backgroundTint="@color/orange"
+        android:drawableStart="@android:drawable/stat_sys_speakerphone"
+        android:drawableLeft="@android:drawable/stat_sys_speakerphone"
         android:text="988 Suicide &amp; Crisis Hotline"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:icon="@android:drawable/stat_sys_speakerphone" />
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/fab2"
@@ -29,9 +30,11 @@
         android:layout_marginRight="5dp"
         android:layout_marginBottom="2dp"
         android:backgroundTint="@color/purple_500"
+        android:drawableStart="@android:drawable/sym_action_chat"
+        android:drawableLeft="@android:drawable/sym_action_chat"
         android:text="Chat with Lifeline"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:icon="@android:drawable/sym_action_chat" />
+        android:textSize="12sp" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
