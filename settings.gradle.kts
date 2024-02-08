@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Too Smart Teens"
+rootProject.name = "Test AI"
 include(":app")
