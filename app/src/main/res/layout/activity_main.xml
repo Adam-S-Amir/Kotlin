@@ -155,5 +155,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/page1_button7" />
 
+        <Button
+            android:id="@+id/page1_button9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:text="Not 2 Vape"
+            android:backgroundTint="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page1_button8" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

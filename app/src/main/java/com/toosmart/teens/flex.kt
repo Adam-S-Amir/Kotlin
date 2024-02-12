@@ -29,6 +29,7 @@ class flex : ComponentActivity() {
         val button6 = findViewById<View>(R.id.page1_button6) as Button
         val button7 = findViewById<View>(R.id.page1_button7) as Button
         val button8 = findViewById<View>(R.id.page1_button8) as Button
+        val button9 = findViewById<View>(R.id.page1_button9) as Button
         val button80 = findViewById<View>(R.id.fab1) as Button
         val button90 = findViewById<View>(R.id.fab2) as Button
         button1.setOnClickListener {
@@ -68,15 +69,26 @@ class flex : ComponentActivity() {
             startActivity(intent)
         }
         button7.setOnClickListener {
-            val url = ""
+            val phoneNumber = "8048762785"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("sms:$phoneNumber")
+            startActivity(intent)
+        }
+        button8.setOnClickListener {
+//            val intent = Intent(this, Calendar::class.java)
+//            startActivity(intent)
+            val url = "https://calendar.google.com/calendar/u/0/embed?src=henricotoosmart2start@gmail.com"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.setData(Uri.parse(url))
             startActivity(intent)
         }
-        button8.setOnClickListener {
-            val intent = Intent(this, Calendar::class.java)
+        button9.setOnClickListener {
+            val url = "https://not2vape.org"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse(url))
             startActivity(intent)
         }
+
         button80.setOnClickListener {
             val url = "tel:988"
             val intent = Intent(Intent.ACTION_VIEW)
