@@ -1,6 +1,7 @@
 package com.toosmart.teens
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -102,5 +103,14 @@ class flex : ComponentActivity() {
             startActivity(intent)
         }
 
+    }
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        if (newConfig.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES) {
+            setTheme(R.style.Theme_TooSmartTeens_Dark)
+        } else {
+            setTheme(R.style.Theme_TooSmartTeens)
+        }
+        recreate()
     }
 }
